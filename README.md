@@ -40,6 +40,12 @@ Follow these steps to set up and run the project locally.
     ```
     Open your web browser and go to `http://127.0.0.1:8000/` to see the application.
 
+You can fetch the latest news in one way.
+
+1.  Manual Fetch via UI:
+    * Navigate to the main dashboard page.
+    * Click the "Fetch Latest News" button to get the newest headlines immediately.
+
 ---
 
 ** Brief explanation of my solution**
