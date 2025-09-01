@@ -6,10 +6,10 @@ class Command(BaseCommand):
     
     def handle(self, *args, **options):
         fetcher = NewsFetcher()
-        news_data = fetcher.fetch_news_from_api()
+        news_data = fetcher.display()
         
         if news_data:
-            saved_count = fetcher.parse_and_save_news(news_data)
+            saved_count = fetcher.store_data(news_data)
             self.stdout.write(
                 self.style.SUCCESS(f'Successfully saved {saved_count} new articles')
             )
